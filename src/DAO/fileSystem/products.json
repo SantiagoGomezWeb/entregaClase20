@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Vino Tinto",
+    "description": "Malbec",
+    "price": 1000,
+    "code": "1234",
+    "stock": 10,
+    "id": 1,
+    "status": true,
+    "category": "Cava",
+    "thumbnails": [
+      "empty"
+    ]
+  },
+  {
+    "title": "Vino Blanco",
+    "description": "Chardonnay",
+    "price": 2000,
+    "code": "4567",
+    "stock": 20,
+    "id": 2,
+    "status": true,
+    "category": "Cava",
+    "thumbnails": [
+      "empty"
+    ]
+  },
+  {
+    "title": "Aceite Oliva",
+    "description": "Doble Filtrado",
+    "price": 3000,
+    "code": "7458",
+    "stock": 30,
+    "id": 3,
+    "status": true,
+    "category": "Almacen",
+    "thumbnails": [
+      "empty"
+    ]
+  }
+]

@@ -1,13 +1,11 @@
 import { Router } from 'express';
-// import ProductManager from '../DAO/fileSystem/ProductManager.js';
+// ANTES import ProductManager from '../DAO/fileSystem/ProductManager.js';
 import ProductManager from '../DAO/mongo/managers/products.js';
 const routerP = Router()
 
 const pm = new ProductManager()
 
-
-
-//http://localhost:8080/api/products?limit=2
+//http://localhost:8080/api/products?limit=3
 routerP.get('/', async (req, res) => {
     try {
         let { limit, page, sort, category } = req.query
@@ -168,4 +166,4 @@ routerP.delete('/:pid', async (req, res) => {
     }
 })
 
-export default routerP
+export default routerP;

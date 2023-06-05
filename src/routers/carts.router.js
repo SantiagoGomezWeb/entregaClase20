@@ -7,7 +7,6 @@ const routerC = Router()
 const cm = new CartManager()
 const pm = new ProductManager()
 
-// ENDPOINT Auxiliar para corroborar todos los carritos y hacer diferentes pruebas
 routerC.get('/', async (req, res) => {
     const result = await cm.getCarts()
     return res.status(200).send(result)
@@ -20,11 +19,8 @@ routerC.get('/:cid', async (req, res) => {
         
         const result = await cm.getCartById(cid)
         
-        // Si el resultado del GET tiene la propiedad 'CastError' devuelve un error
         if(result === null || typeof(result) === 'string') return res.status(404).send({status:'error', message: 'ID not found' });
         
-
-        // Resultado
         return res.status(200).send(result);
     } catch (err) {
         console.log(err);
@@ -203,4 +199,4 @@ routerC.delete('/:cid', async (req, res) => {
 })
 
 
-export default routerC
+export default routerC;

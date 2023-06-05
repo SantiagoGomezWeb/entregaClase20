@@ -9,8 +9,6 @@ class ProductManager {
     };
 
     // Private methods
-
-
     #validateCodeProduct = async (obj) => {
 
         let validateCode = this.products.find(property => property.code === obj.code);
@@ -195,4 +193,3 @@ class ProductManager {
 };
 
 export default ProductManager;
-

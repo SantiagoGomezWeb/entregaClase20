@@ -2,10 +2,10 @@ import { Router } from "express";
 import ProductManager from "../DAO/mongo/managers/products.js";
 import CartManager from "../DAO/mongo/managers/carts.js";
 const routerV = Router();
-const pm = new ProductManager()
-const CM = new CartManager()
+const pm = new ProductManager();
+const CM = new CartManager();
 
-let cart = []
+let cart = [];
 
 routerV.get('/test', (req, res) => {
     res.render('test')
@@ -151,10 +151,6 @@ routerV.get('/carts/:cid', async (req, res) => {
 
 })
 
-// routerV.get('/register', (req, res) =>{
-//     res.render('register')
-// })
-
 routerV.get('/login', (req, res) => {
     res.render('login')
 })
@@ -163,6 +159,4 @@ routerV.get('/register', (req, res) => {
     res.render('registerForm')
 })
 
-
-
-export default routerV
+export default routerV;
